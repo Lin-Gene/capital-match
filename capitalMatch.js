@@ -9,7 +9,11 @@ let gameOn = true;
 
 
 // check if there are inputs
-    
+if (process.argv.length != 3) {  
+    figletPrint("Error !");
+    console.log("\n");
+    console.log("Please provide a country name followed by its capital name when executing this file.".red);
+    console.log("Expected format: node capitalMatch.js country capital".red);
 } else {
 
 }
